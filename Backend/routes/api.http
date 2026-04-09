@@ -1,0 +1,19 @@
+POST http://localhost:9080/register HTTP/1.1
+Content-Type: :application/json
+
+{
+   " username"
+   "password"
+    "name"
+    "email"
+}
+
+###
+
+POST http://localhost:9080/login HTTP/1.1
+Content-Type: :application/json
+
+{
+   "password"
+    "email"
+}
