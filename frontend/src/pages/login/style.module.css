@@ -1,0 +1,146 @@
+/* PAGE CONTAINER */
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: snow;
+  padding: 1rem;
+}
+
+/* CARD */
+.cardContainer{
+  min-height: 520px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80vw;
+  max-width: 1000px;
+  background: white;
+  box-shadow: 10px 10px 15px rgb(173, 173, 173);
+}
+
+
+/* LEFT SIDE */
+.cardContainer_left{
+  flex: 0.6;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* RIGHT SIDE */
+.cardContainer_right{
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0a66c2, #004182);
+  color: white;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.5rem;
+}
+
+
+/* HEADING */
+.cardleft_heading{
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+
+/* INPUT SECTION */
+.inputContainers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.3rem;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 1.3rem;
+  width: 100%;
+}
+
+
+/* INPUT FIELD */
+.inputfield{
+  padding: 0.8rem 1.3rem;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid silver;
+  width: 100%;
+}
+
+
+/* INPUT ROW */
+.inputRow{
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+
+/* BUTTON */
+.buttonwithoutline{
+  padding: 0.8rem 1.3rem;
+  background: rgb(219, 217, 217);
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+/* SMALL LAPTOP */
+@media (max-width: 1100px){
+
+  .cardContainer{
+    width: 90vw;
+  }
+
+}
+
+
+/* TABLET */
+@media (max-width: 850px){
+
+  .cardContainer{
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .cardContainer_left{
+    flex: unset;
+    padding: 1.5rem;
+  }
+
+  .cardContainer_right{
+    flex: unset;
+    padding: 2rem;
+  }
+
+}
+
+
+/* MOBILE */
+@media (max-width: 500px){
+
+  .cardContainer{
+    width: 95vw;
+  }
+
+  .cardleft_heading{
+    font-size: 1.5rem;
+  }
+
+  .inputRow{
+    flex-direction: column;
+  }
+
+  .inputfield{
+    font-size: 0.9rem;
+  }
+
+}

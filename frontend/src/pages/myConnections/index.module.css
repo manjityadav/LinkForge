@@ -1,0 +1,78 @@
+.requestContainer{
+  width:60%;
+  margin:auto;
+  margin-top:30px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.requestCard{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+  transition:0.2s;
+  cursor: pointer;
+}
+
+.requestCard:hover{
+  transform:translateY(-2px);
+}
+
+.avatar{
+  height:55px;
+  width:55px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.userInfo{
+  flex:1;
+  margin-left:15px;
+}
+
+.userInfo h3{
+  margin:0;
+  font-size:16px;
+}
+
+.userInfo p{
+  margin:0;
+  color:gray;
+  font-size:14px;
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+.acceptBtn{
+  padding:8px 18px;
+  border:none;
+  background:#0a66c2;
+  color:white;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+.acceptBtn:hover{
+  background:#004182;
+}
+
+.rejectBtn{
+  padding:8px 18px;
+  border:1px solid gray;
+  background:white;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+.rejectBtn:hover{
+  background:#f3f3f3;
+}
+

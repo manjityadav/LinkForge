@@ -1,0 +1,276 @@
+.profilePage {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f6f8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* COVER */
+.cover {
+  height: 240px;
+  background: linear-gradient(135deg, #0a66c2, #004182);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* PROFILE CARD */
+.profileSection {
+  width: 85%;
+  margin: -80px auto 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.profileSection:hover {
+  transform: translateY(-2px);
+}
+
+/* AVATAR */
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+
+  position: absolute;
+  top: -65px;
+  left: 30px;
+}
+
+/* BUTTON */
+.followBtn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+
+  background: #0a66c2;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.followBtn:hover {
+  background: #004182;
+}
+
+/* USER INFO */
+.userDetails {
+  margin-top: 80px;
+}
+
+.userDetails h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1c1e21;
+}
+
+.username {
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.bio {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.meta {
+  display: flex;
+  gap: 30px;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* CONTENT (VERTICAL FLOW) */
+.content {
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* SECTION CARDS */
+.section {
+  background: #ffffff;
+  padding: 22px 26px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s ease;
+}
+
+.section:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+/* SECTION TITLE */
+.section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+/* ITEM (EDUCATION / EXPERIENCE) */
+.item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.item p {
+  margin: 4px 0;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.item span {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* POST CARD */
+.post {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+
+  border: 1px solid #e5e7eb;
+  transition: 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.post:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+
+/* TEXT */
+.postText {
+  font-size: 15px;
+  color: #1f2937;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* IMAGE */
+.postImage {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* OPTIONAL ACTIONS (future ready) */
+.postActions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.postActions span:hover {
+  color: #0a66c2;
+}
+
+/* HEADER */
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+/* TIME */
+.postTime {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* FOOTER */
+.postFooter {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+/* EMPTY TEXT */
+.empty {
+  color: #9ca3af;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .profileSection,
+  .content {
+    width: 95%;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+  }
+
+  .userDetails {
+    margin-top: 60px;
+  }
+}
+
+.profileActions{
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+}
+
+.resumeBtn{
+    padding:10px 18px;
+    background:#ffffff;
+    border:1px solid #0a66c2;
+    border-radius:20px;
+    color:#0a66c2;
+    font-weight:600;
+    text-decoration:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.resumeBtn:hover{
+    background:#0a66c2;
+    color:white;
+}

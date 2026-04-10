@@ -1,0 +1,351 @@
+.profilePage{
+  width:100%;
+  min-height:100vh;
+  background:#f4f6f8;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+
+
+/* COVER */
+
+.cover{
+  height:240px;
+  background:linear-gradient(135deg,#0a66c2,#004182);
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+}
+
+
+/* PROFILE CARD */
+
+.profileSection{
+  width:85%;
+  margin:-80px auto 20px;
+  background:#fff;
+  border-radius:18px;
+  padding:30px;
+  position:relative;
+  box-shadow:0 8px 30px rgba(0,0,0,0.08);
+}
+
+
+/* AVATAR */
+
+.avatarContainer{
+  position:absolute;
+  top:-65px;
+  left:30px;
+  width:130px;
+  height:130px;
+  border-radius:50%;
+  overflow:hidden;
+  border:5px solid #fff;
+  cursor:pointer;
+}
+
+.avatarContainer label{
+  cursor: pointer;
+}
+.avatar{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+
+/* EDIT OVERLAY */
+
+.cameraOverlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  font-weight:600;
+  opacity:0;
+  transition:0.3s;
+}
+
+.avatarContainer:hover .cameraOverlay{
+  opacity:1;
+}
+
+
+/* HIDE FILE INPUT */
+
+.fileInput{
+  display:none;
+}
+
+
+/* USER DETAILS */
+
+.userDetails{
+  margin-top:80px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+
+/* NAME INPUT */
+
+.nameInput{
+  font-size:26px;
+  font-weight:700;
+  border:none;
+  outline:none;
+  background:transparent;
+  color:#1c1e21;
+  width:300px;
+}
+
+.nameInput:focus{
+  border-bottom:2px solid #0a66c2;
+}
+
+
+/* USERNAME */
+
+.username{
+  color:#6b7280;
+  font-size:14px;
+}
+
+
+/* BIO TEXTAREA */
+
+.bio{
+  margin-top:8px;
+  font-size:15px;
+  color:#374151;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  padding:8px 10px;
+  resize:none;
+  width:350px;
+  min-height:60px;
+  outline:none;
+}
+
+.bio:focus{
+  border:1px solid #0a66c2;
+}
+
+
+/* UPDATE BUTTON */
+
+.updateBtn{
+  margin-top:10px;
+  width:160px;
+  padding:8px 14px;
+  border:none;
+  background:#0a66c2;
+  color:white;
+  font-weight:600;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.updateBtn:hover{
+  background:#004182;
+}
+
+
+/* FOLLOW INFO */
+
+.meta{
+  display:flex;
+  gap:30px;
+  margin-top:14px;
+  font-size:14px;
+  color:#555;
+}
+
+
+/* CONTENT */
+
+.content{
+  width:85%;
+  margin:20px auto;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+
+/* SECTION */
+
+.section{
+  background:#fff;
+  padding:22px 26px;
+  border-radius:16px;
+  border:1px solid #e5e7eb;
+}
+
+
+/* SECTION TITLE */
+
+.section h3{
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:18px;
+}
+
+
+/* ITEMS */
+
+.item{
+  padding:12px 0;
+  border-bottom:1px solid #f0f0f0;
+}
+
+.item:last-child{
+  border-bottom:none;
+}
+
+.item h4{
+  font-size:15px;
+  font-weight:600;
+}
+
+.item p{
+  margin:4px 0;
+  font-size:14px;
+  color:#4b5563;
+}
+
+.item span{
+  font-size:12px;
+  color:#9ca3af;
+}
+
+
+/* POSTS */
+
+.post{
+  background:#fff;
+  border-radius:14px;
+  padding:16px;
+  border:1px solid #e5e7eb;
+}
+
+.postText{
+  font-size:15px;
+  color:#1f2937;
+  margin-bottom:10px;
+}
+
+.postImage{
+  width:100%;
+  max-height:400px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.postHeader{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:8px;
+}
+
+.postTime{
+  font-size:12px;
+  color:#9ca3af;
+}
+
+
+/* EMPTY STATE */
+
+.empty{
+  color:#9ca3af;
+  font-size:14px;
+  text-align:center;
+}
+
+.sectionHeader{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:10px;
+}
+
+.addBtn{
+background:#0a66c2;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:6px;
+cursor:pointer;
+font-size:13px;
+}
+
+.modalOverlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:1000;
+}
+
+.modal{
+background:white;
+padding:25px;
+border-radius:10px;
+width:350px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.modal input{
+padding:8px;
+border:1px solid #ddd;
+border-radius:6px;
+}
+
+.modalActions{
+display:flex;
+justify-content:flex-end;
+gap:10px;
+margin-top:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .profileSection,
+  .content{
+    width:95%;
+  }
+
+  .avatarContainer{
+    width:100px;
+    height:100px;
+    top:-50px;
+  }
+
+  .userDetails{
+    margin-top:60px;
+  }
+
+  .nameInput{
+    width:100%;
+  }
+
+  .bio{
+    width:100%;
+  }
+
+}

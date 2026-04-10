@@ -1,0 +1,98 @@
+.discoverCard {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle gradient hover glow */
+.discoverCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #0073b1, #00c6ff);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 0;
+}
+
+.discoverCard:hover::before {
+  opacity: 0.08;
+}
+
+.discoverCard:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 15px 40px rgba(0, 115, 177, 0.15);
+}
+
+/* profile image */
+.profileImage {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.discoverCard:hover .profileImage {
+  transform: scale(1.08);
+}
+
+/* user info */
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 1;
+}
+
+.userInfo h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d2226;
+}
+
+.userInfo p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* button */
+.viewBtn {
+  margin-top: 6px;
+  width: fit-content;
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  border: 1px solid #0073b1;
+  background: transparent;
+  color: #0073b1;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.viewBtn:hover {
+  background: #0073b1;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 115, 177, 0.3);
+}

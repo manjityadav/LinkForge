@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+.container{
+     margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    background:white;
+}
+
+/* HERO SECTION */
+
+.hero{
+    min-height:calc(100vh - 80px);
+    padding:60px 8%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+}
+
+/* LEFT CONTENT */
+
+.left{
+    flex:1;
+    max-width:560px;
+}
+
+.left h1{
+    font-size:56px;
+    font-weight:700;
+    line-height:1.15;
+    color:#0f172a;
+}
+
+.left span{
+    color:#2563eb;
+}
+
+.left p{
+    margin-top:24px;
+    font-size:18px;
+    color:#64748b;
+    line-height:1.7;
+}
+
+/* BUTTONS */
+
+.buttons{
+    margin-top:40px;
+    display:flex;
+    gap:18px;
+}
+
+.primaryBtn{
+    padding:14px 34px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+    transition:all .25s ease;
+}
+
+.primaryBtn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(37,99,235,0.25);
+}
+
+.secondaryBtn{
+    padding:14px 30px;
+    border-radius:10px;
+    border:1px solid #e2e8f0;
+    background:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:all .25s ease;
+}
+
+.secondaryBtn:hover{
+    border-color:#2563eb;
+    color:#2563eb;
+}
+
+/* IMAGE SIDE */
+
+.right{
+    flex:1.2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.right img{
+    width:100%;
+    max-width:720px;
+    height:auto;
+}
+
+/* TABLET */
+
+@media (max-width:1000px){
+
+.hero{
+    gap:40px;
+}
+
+.left h1{
+    font-size:46px;
+}
+
+}
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding-top:100px;
+}
+
+.left{
+    max-width:100%;
+}
+
+.left p{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+.right img{
+    max-width:500px;
+}
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width:500px){
+
+.left h1{
+    font-size:36px;
+}
+
+.left p{
+    font-size:16px;
+}
+
+.primaryBtn{
+    padding:12px 28px;
+}
+
+}
