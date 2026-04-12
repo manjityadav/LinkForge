@@ -102,10 +102,10 @@ const ViewProfile = ({ userProfile }) => {
               <p className={styles.bio}>
                 {userProfile?.bio || "Building something cool 🚀"}
               </p>
-
+                 
               <div className={styles.meta}>
-                <span><b>{authState?.connections.length}</b> Following</span>
-                <span><b> {authState?.connectionRequest.length} </b> Followers</span>
+                <span><b>{authState?.connectionRequest?.length}</b> Following</span>
+                <span><b>{authState?.connections?.length}</b> Followers</span>
               </div>
 
               {/* ACTION BUTTONS */}
