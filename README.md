@@ -1,139 +1,186 @@
-# 🚀 LinkForge – Professional Networking Platform
+# LinkForge – Full Stack Professional Networking Platform
 
-LinkForge is a full-stack social networking web application, built using the MERN stack with Next.js.
-It enables users to create profiles, connect with others, share posts, and manage professional data including resume downloads.
+LinkForge is a full-stack professional networking platform inspired by modern networking applications.  
+Built using the **MERN Stack + Next.js**, the platform allows users to create professional profiles, connect with other users, and generate downloadable resumes directly from profile data.
 
 ---
 
-## 🌟 Features
+## 🚀 Features
 
-* 🔐 **Authentication System** (Signup / Login)
-* 👤 **User Profiles** with detailed professional information
-* 🤝 **Connection System**
-
-  * Send connection requests
-  * Accept / Reject requests
-  * Manage **Pending & Connected users**
-* 📝 **Post Creation & Feed**
-  * Create posts
-  * View posts from connections
-* 📄 **Resume Download**
-* Others can download resumes directly from profiles
-  
-- 🔍 **View Other Profiles**
-- ⚡ **Global State Management with Redux Toolkit**
-- 📱 **Responsive UI for multiple devices**
+- 👤 User authentication & authorization
+- 🤝 Connection request system (Pending / Accepted)
+- 📄 Dynamic resume generation from user profiles
+- ⬇️ Resume download functionality
+- 🧑‍💼 Professional profile management
+- 🔍 User discovery and networking
+- ⚡ REST API integration
+- 📱 Fully responsive UI
+- 🧠 Global state management using Redux Toolkit
+- 🚀 Optimized frontend performance
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
-* Next.js
-* React.js
-* Redux Toolkit
-* CSS Modules
+- Next.js
+- Tailwind CSS
+- Redux Toolkit
 
 ### Backend
-
-* Node.js
-* Express.js
+- Node.js
+- Express.js
+- REST APIs
 
 ### Database
+- MongoDB
 
-* MongoDB
-
----
-
-## 📂 Project Structure
-
-LinkForge/
-├── Backend/
-├── frontend/
-└── README.md
-
----
-
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the repository
-
-git clone https://github.com/manjityadav/LinkForge.git
-cd LinkForge
-
----
-
-### 2️⃣ Setup Backend
-
-cd Backend
-npm install
-npm start
-
----
-
-### 3️⃣ Setup Frontend
-
-cd frontend
-npm install
-npm run dev
-
----
-
-## 🌐 Environment Variables
-
-Create a `.env` file in both frontend and backend.
-
-### Backend `.env`
-
-PORT=9090
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-
-### Frontend `.env`
-
-NEXT_PUBLIC_BASE_URL=http://localhost:3000
-
----
-
-## 🚀 Deployment
-
-* Frontend deployed on **Vercel**
-* Backend deployed on **Render**
-
----
-## 🧠 Key Highlights
-
-* Real-world **social networking features**
-* Efficient state management using **Redux Toolkit**
-* Clean and scalable **MERN + Next.js architecture**
-* Resume handling system for professional use cases
+### Deployment
+- Vercel
+- Render
 
 ---
 
 ## 🔑 Demo Credentials
 
-You can use the following account to explore the application:
-
-**Email:** manjith@gmail.com  
-**Password:** manjith@123
-
-> Feel free to login and explore features like connections, posts, and resume download.
-> 
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork this repository and submit a pull request.
+```bash
+Email: manjith@gmail.com
+Password: manjith@123
+```
 
 ---
 
-## 📧 Contact
+## 🧠 System Architecture
 
-**Manjith Yadav**
-GitHub: https://github.com/manjityadav
+```text
+Client (Next.js Frontend)
+        ↓
+REST APIs (Express.js Backend)
+        ↓
+MongoDB Database
+```
+
+- Frontend handles UI rendering and user interactions
+- Express.js manages APIs and authentication
+- MongoDB stores user, profile, and connection data
+- Redux Toolkit manages scalable frontend state
 
 ---
 
-## ⭐ Show your support
+## 📂 Project Structure
 
-If you like this project, give it a ⭐ on GitHub!
+```bash
+LinkForge/
+│
+├── frontend/          # Next.js frontend
+├── backend/           # Node.js + Express backend
+├── public/            # Static assets
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/manjityadav/LinkForge.git
+cd LinkForge
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+#### Frontend
+
+```bash
+cd frontend
+npm install
+```
+
+#### Backend
+
+```bash
+cd backend
+npm install
+```
+
+---
+
+### 3️⃣ Configure Environment Variables
+
+Create a `.env` file inside backend:
+
+```env
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+```
+
+---
+
+### 4️⃣ Start Development Servers
+
+#### Start Backend
+
+```bash
+cd backend
+npm start
+```
+
+#### Start Frontend
+
+```bash
+cd frontend
+npm run dev
+```
+
+---
+
+## 🌐 Live Demo
+
+### 🔗 Live Project
+https://link-forge-mmhf4d5eh-manjeet-yadavs-projects.vercel.app/
+
+### 🔗 GitHub Repository
+https://github.com/manjityadav/LinkForge
+
+---
+
+## 📸 Core Functionalities
+
+### ✔️ Authentication System
+Implemented secure login and registration workflows with protected routes and token-based authentication.
+
+### ✔️ Connection Management
+Users can send, accept, and manage connection requests similar to professional networking platforms.
+
+### ✔️ Resume Generation
+Implemented dynamic resume generation using user profile information with direct download support.
+
+### ✔️ Redux State Management
+Used Redux Toolkit for scalable and centralized frontend state management.
+
+### ✔️ Responsive Design
+Designed responsive interfaces optimized for mobile, tablet, and desktop devices.
+
+---
+
+## 📈 Performance
+
+- Achieved high Lighthouse performance scores
+- Optimized API calls and frontend rendering
+- Efficient state handling using Redux Toolkit
+- Improved loading speed with optimized components
+
+---
+
+## 👨‍💻 Author
+
+### Manjeet Kumar Yadav
+
+- GitHub: https://github.com/manjityadav
+- LinkedIn: https://www.linkedin.com/in/manjith-yadav-071b99276/
+- Portfolio: https://portfolio-jc4u.onrender.com/
